@@ -1,6 +1,28 @@
-nginx
-#支持私库
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-xhofe/alist:latest
-#支持指定架构
---platform=linux/arm64 xiaoyaliu/alist
+#nginx
+##支持私库
+#k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
+#xhofe/alist:latest
+##支持指定架构
+#--platform=linux/arm64 xiaoyaliu/alist
+
+--platform=linux/x86_64 bitnami/java:17
+--platform=linux/aarch64 bitnami/java:17
+
+--platform=linux/x86_64 bitnami/tomcat:10.1.25
+--platform=linux/aarch64 bitnami/tomcat:10.1.25
+
+--platform=linux/x86_64 flink:1.18-java17
+--platform=linux/aarch64 flink:1.18-java17
+
+--platform=linux/x86_64 bitnami/minideb:bullseye
+--platform=linux/aarch64 bitnami/minideb:bullseye
+
+--platform=linux/x86_64 bitnami/nginx:1.25
+--platform=linux/aarch64 bitnami/nginx:1.25
+
+--platform=linux/x86_64 bitnami/keycloak:23.0.7
+--platform=linux/aarch64 bitnami/keycloak:23.0.7
+
+--platform=linux/x86_64 bitnami/java:21
+--platform=linux/aarch64 bitnami/java:21
+--platform=linux/aarch64 maven:3.8.5-openjdk-17
